@@ -1,21 +1,57 @@
+/* Body and Global */
 body {
+	color: #fff;
 	font-size: 16;
 	line-height: 1.5;
 	font-family: sans-serif;
+	background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
 }
+
+/* Elements */
 
 ul {
 	font-size: 2rem;
+	text-decoration: none;
 }
+
+input[type="button"] {
+	background: #FEFF00;
+	padding: 10px;
+	text-decoration: none;
+	border-radius: 4px;
+}
+
+input[type="text"] {
+    padding: 16px 15px 14px;
+    border-radius: 6px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    color: #333;
+}
+
+.form-section button {
+	border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 14px 30px;
+}
+
+/* Layout */
 
 section {
-	display: flex;
-	flex-wrap: wrap;
-	border: 1px solid red;
-	width: 100%;
+	padding: 15px;
 }
 
-section > * {
-	flex: 1	1 500px;
-	justify-content: center;
+.flex-form {
+	display: flex;
+}
+
+.flex-form > * {
+	flex: 1;
+}
+
+.wrapper {
+	display: flex;
+	max-width: 100%;
+	flex-direction: column;
+	align-items: center;
 }
