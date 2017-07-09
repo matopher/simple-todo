@@ -1,0 +1,21 @@
+body {
+	font-size: 16;
+	line-height: 1.5;
+	font-family: sans-serif;
+}
+
+ul {
+	font-size: 2rem;
+}
+
+section {
+	display: flex;
+	flex-wrap: wrap;
+	border: 1px solid red;
+	width: 100%;
+}
+
+section > * {
+	flex: 1	1 500px;
+	justify-content: center;
+}

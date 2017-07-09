@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<title>My Todo List App</title>
+</head>
+<body>
+
+<div>
+
+	<section>
+		<h1>Todo</h1>
+		<form>
+			<input type="text" id="activity" placeholder="Add to todo list">
+			<input type="button" onClick="addTodoItem();" name="add" value="ADD">
+		</form>
+	</section>
+
+	<main id="main">
+		<ul id="todo"></ul>
+	</main>
+<script type="text/javascript" src="js/app.js"></script>	
+<script type="text/javascript">drawTodoList();</script>
+</div>
+</body>
+</html>
