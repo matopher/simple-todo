@@ -31,6 +31,7 @@ function addTodoItem(){
 }
 
 function deleteTodoItem(){
-	console.log("deleted");
-	todo.innerHTML += "";
+	todoList.pop(action.value);
+		action.value = '';
+		drawTodoList();
 }

@@ -46,8 +46,16 @@ section {
 	display: flex;
 }
 
+#todo ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
 .form-section {
 	width: 50%;
+	display: flex;
+    justify-content: center;
 }
 
 .flex-form {
