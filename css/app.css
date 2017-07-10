@@ -27,6 +27,7 @@ input[type="text"] {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     color: #333;
+    flex: 1 1 300px;
 }
 
 .form-section button {
@@ -41,12 +42,24 @@ section {
 	padding: 15px;
 }
 
+#main {
+	display: flex;
+}
+
+.form-section {
+	width: 50%;
+}
+
 .flex-form {
 	display: flex;
 }
 
-.flex-form > * {
-	flex: 1;
+.flex-form input {
+	flex: 3 1 300px;
+}
+
+.flex-form button {
+	flex: 1 1 100px;
 }
 
 .wrapper {

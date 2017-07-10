@@ -12,9 +12,11 @@ function drawTodoList(){
 	todo.innerHTML = ' ';
 	// Now add updated array to new list
 	for(var i = 0; i < todoList.length; i++){
-	todo.innerHTML += "<li>" + todoList[i] + "</li>";
+	todo.innerHTML += "<li> <input type='checkbox'> " + todoList[i] + "</li>";
 	}
 }
+
+var action = document.getElementById("activity");
 
 function addTodoItem(){
 	var action = document.getElementById("activity");
@@ -26,4 +28,9 @@ function addTodoItem(){
 		action.value = '';
 		drawTodoList();
 	}
+}
+
+function deleteTodoItem(){
+	console.log("deleted");
+	todo.innerHTML += "";
 }
